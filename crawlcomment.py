@@ -17,10 +17,10 @@ loginButton.click()
 sleep(random.randint(5,10))
 
 txtUser = browser.find_element(by=By.NAME, value="email")
-txtUser.send_keys('byakuyakurenai2001@gmail.com')
+txtUser.send_keys('your_username')
 
 txtPass = browser.find_element(by=By.NAME, value="pass")
-txtPass.send_keys('3KSi)Ki*cSPYp4G')
+txtPass.send_keys('your_password')
 
 # 2b. Submit form
 txtPass.send_keys(Keys.ENTER)
@@ -55,23 +55,6 @@ def crawl(post_link, post_num):
     # 2a. Mo URL cua post
     browser.get(post_link)
     sleep(random.randint(5,10))
-
-    # loginButton = browser.find_element(by=By.XPATH, value="//*[text()='Log In']")
-    # loginButton = loginButton.find_element(by=By.XPATH, value="./..")
-    # loginButton.click()
-    # sleep(random.randint(5,10))
-
-    # txtUser = browser.find_element(by=By.NAME, value="email")
-    # txtUser.send_keys('byakuyakurenai2001@gmail.com')
-
-    # txtPass = browser.find_element(by=By.NAME, value="pass")
-    # txtPass.send_keys('3KSi)Ki*cSPYp4G')
-
-    # # 2b. Submit form
-    # txtPass.send_keys(Keys.ENTER)
-
-    # # 3. Dung chuong trinh
-    # sleep(random.randint(10, 15))
 
     # 4. Lay content cua post
     postContent = browser.find_element(by=By.CSS_SELECTOR, value="div[class='story_body_container'] > div:nth-child(2) > div > p")
