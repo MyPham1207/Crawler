@@ -1,0 +1,8 @@
+Giới hạn khi crawl: 
+- Không load hết được cmt.
+- Nhạy cảm với sự thay đổi của data attribute.
+- Giới hạn số lần truy cập vào 1 tài khoản.
+- Chỉ có thể click xem thêm bình luận 1 lần, nếu như quá 1 lần thì không tìm thấy được đường dẫn của content trong comment (???).
+- Mạng phải mạnh.
+- Không crawl hết được nội dung post (mạng yếu)
+- Chạy chậm.
